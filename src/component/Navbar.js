@@ -28,8 +28,10 @@ export const Navbar = () => {
           <NavLink className={`nav-link ${location.pathname==='/about'?"active":""}`} to="/about">about</NavLink>
         </li>
       </ul>
+      {   <form  className="d-flex">
         <NavLink className="btn btn-primary mx-2"  to="/login"  role="button" >Login</NavLink>
         <NavLink className="btn btn-primary mx-2 "  to="/signup" role="button" >Sign up</NavLink>
+        </form>}
     </div>
   </div>
 </nav>
